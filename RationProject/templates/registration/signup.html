@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'authApp/base.html' %}
+  {% block body_block%}
+  <br>
+  <br>
+  <div class="jumbotron">
+    <div class="container" >
+
+      <h1 style="color:red;">SignUP Portal</h1>
+      <!--This 'form' key comes from default authApp and create login form by default.It is not our login form -->
+      <form class="" method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        <button type="submit" class="btn btn-primary">Register</button>
+
+      </form>
+
+    </div>
+
+  </div>
+{%endblock%}

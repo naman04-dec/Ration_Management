@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer</title>
+</head>
+<body style="background-color:powderblue;">
+    <div class="container" align='center'>
+    {%block body_block%}
+    <h1>Customer Ration DashBoard</h1><hr>
+    <table border='2'>
+      <thead  style="color:red">
+        <th>Name</th>
+        <th>Aadhar</th>
+        <th>Sugar Quantity</th>
+        <th>Wheat Quantity</th>
+        <th>Rice Quantity</th>
+        <th>Date</th>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      </thead>
+    {%for custRation in custration_list %}
+      <tr>
+        <td>{{custRation.customer_name}}</td>
+        <td>{{custRation.aadhar_num}}</td>
+        <td>{{custRation.sugar_quant}}</td>
+        <td>{{custRation.wheat_quant}}</td>
+        <td>{{custRation.rice_quant}}</td>
+        <td>{{custRation.date}}</td>
+      </tr>
+      {%endfor%}
+    </table><br><br>
+
+      <a href="/" class='btn btn-danger'>Home</a>
+      <br>
+    
+
+  {%endblock %}
+
+
+  </div>
+</body>
+</html>

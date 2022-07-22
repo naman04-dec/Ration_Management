@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ration App</title>
+    <!--<link rel='stylesheet' href="{% static "css/boot-cdn.css" %}"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel='stylesheet' href="{% static "css/abc.css" %}">
+  </head>
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" style="color:red">Indian Ration Managment</a>
+    </div>
+
+<ul class="nav navbar-nav">
+<li><a href="/govApp/govForm">Government Pannel</a></li>
+<li><a href="/shopApp/shopForm">Ration Shop</a></li>
+<li><a href="/custApp/cust-list/">Customer</a></li>
+<li><a href="/custApp/customer/">Search Customer</a></li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/signup">SignUp</a></li>
+<li><a href="/accounts/login">Login</a></li>
+<li><a href="/accounts/logout">Logout</a></li>
+</ul>
+
+  </div>
+
+</nav>
+<!--<div class="jumbotron" style="background-color:white;">
+<div class="container">
+ <div class="row">
+   <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+    <a href="/gov" class="class='btn btn-primary btn-lg">Government</a>
+   </div>
+     <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+     <a href="/shop" class="class='btn btn-warning btn-lg">Ration shop</a>
+
+   </div>
+   <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+       <a href="/cust" class="class='btn btn-primary btn-lg">Customer</a>
+   </div>
+ </div>
+</div>
+</div>
+-->
+<div class="container" align='center'>
+   {%block body_block%}
+   {%endblock %}
+ </div>
+
+  </body>
+</html>

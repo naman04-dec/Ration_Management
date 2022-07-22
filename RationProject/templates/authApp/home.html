@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>base</title>
+    <link rel='stylesheet' href="{% static "css/boot-cdn.css" %}">
+  <link rel='stylesheet' href="{% static "css/custom0.css" %}">
+  </head>
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="" style="color:red">Indian Ration Managment</a>
+    </div>
+    <!--
+<ul class="nav navbar-nav">
+<li><a href="/gov">GovPannel</a></li>
+<li><a href="/shop">RationShop</a></li>
+<li><a href="/cust">Customer</a></li>
+</ul>
+-->
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/signup">SignUp</a></li>
+<li><a href="/accounts/login">Login</a></li>
+<li><a href="/accounts/logout">Logout</a></li>
+</ul>
+
+  </div>
+
+</nav>
+<div class="jumbotron" style="background-color:white;margin: 50px 50px 50px 200px;">
+<div class="container">
+ <div class="row">
+   <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+    <a href="/gov" class="class='btn btn-primary btn-lg">Government</a>
+   </div>
+     <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+     <a href="/shop" class="class='btn btn-warning btn-lg">Rationshop</a>
+
+   </div>
+   <div class="col-sm-4 " style="padding: 10px 10px 10px 10px;">
+       <a href="/cust" class="class='btn btn-primary btn-lg">Customer</a>
+   </div>
+ </div>
+</div>
+</div>
+
+    {% block body_block%}
+    {%endblock%}
+
+  </body>
+</html>

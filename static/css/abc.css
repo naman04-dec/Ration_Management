@@ -1,0 +1,9 @@
+body {
+   background-image: url("https://images.thequint.com/thequint%2F2021-06%2F3ef6a178-005e-4132-9554-ae7636040985%2F2.jpg?w=1200&auto=format%2Ccompress&ogImage=true");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+   img{opacity: 0.3}
+
+}

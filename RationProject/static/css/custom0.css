@@ -1,0 +1,8 @@
+body {
+ background-image: url("https://indianopinionpost.com//wp-content/uploads/2019/07/Ration-card.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   img{opacity: 0.3}
+
+}
